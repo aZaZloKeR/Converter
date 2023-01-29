@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+<form action="/registration" method="post" >
+    <label> login: <input type = "text" name = "login" /> </label> <br>
+    <label> password: <input type="password" name="password" /> </label>  <br>
+    <input type="submit" value="registration" />
+</form>
+<a href="/login">login</a> <br>
+<th:block th:text="${error}"></th:block> <br>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  db:
+    container_name: pg_db
+    image: postgres:14.3-alpine
+    environment:
+      POSTGRES_USER: superadmin
+      POSTGRES_PASSWORD: Gfhjkm!23
+      POSTGRES_DB: converter_db
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"

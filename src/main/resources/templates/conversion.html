@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greetings</title>
+</head>
+<body>
+
+<form action="/conversion" method="post">
+    <select name="typeOfConversion">
+        <option value="NumberToString">number to string</option>
+        <option value="StringToNumber" selected>string to number</option>
+    </select>
+    <label> data for conversion: <input type = "text" name = "dataForConversion" /> </label> <br>
+    <input type="submit" value="conversion" />
+</form>
+<th:block th:text="${convertedData}"></th:block> <br>
+<form action="/logout" method="post" >
+    <input type="submit" value="logout" />
+</form>
+</body>
+</html>
