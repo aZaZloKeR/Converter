@@ -161,6 +161,7 @@ public class ConvertServiceBean implements ConvertService{
     private void extractDozensMoreThan19(long remainder,List<String> result){
         if (remainder % 10 != 0) {
             long temp=remainder%10;
+            numberForCheckEndWord = temp;
             extractUnits(temp,result);
             result.add(wordsForDozens[(int) remainder / 10 - 2]);
             countAddedInThisIteration++;
