@@ -4,6 +4,5 @@
     Перед стартом приложения нужно запустить: 
 </p>
 <ol>
-    <li>docker-compose.yml</li>
-    <li>sql_script_create_insert.sql</li>
+    <li>docker-compose-db.yml</li>
 </ol>
